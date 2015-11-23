@@ -1,5 +1,5 @@
 class Bear
-  
+
   attr_reader :name, :type, :food
 
   def initialize(input_name, input_type)
@@ -9,14 +9,14 @@ class Bear
   end
 
   def roar
-    roar = ""
+    roar = "ROAR!"
     case type
     when 'Pooh'
       roar = "pooh!"
     when 'Polar'
       roar = "rrrrrrrrr"
     when 'Honey'
-      roar = "aawwwrr"
+      roar = "aawwwr"
     end
     puts "#{name} roars! #{roar}"
   end
@@ -24,7 +24,7 @@ class Bear
   def take_fish_from(river)
     fish = river.go_fish
     food << fish
-    puts "#{name} the #{type} snatches #{fish.name} the Fish from the River #{river.name}!"
+    puts "#{name} the #{type} Bear snatches #{fish.name} the Fish from the River #{river.name}!"
   end
 
 end

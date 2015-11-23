@@ -4,7 +4,7 @@ require_relative "river"
 
 
 byrni = Bear.new('Byrnison', 'Polar')
-william = Bear.new('William', 'Honey')
+william = Bear.new('William', 'Sun')
 winnie = Bear.new('Winnie', 'Pooh')
 
 byrni.roar
@@ -20,8 +20,31 @@ fish_arr = [fish1, fish2, fish3]
 
 forth = River.new('Forth', fish_arr)
 
+puts """  ~~~~~~~~~~~~~~~~~~~~~~<*)))><~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~><[[[o>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~><(((o)3~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"""
+puts "\n"
+
+forth.fishiness
+puts "\n"
 
 winnie.take_fish_from(forth)
 puts "\n"
 puts forth.inspect
 puts winnie.inspect
+puts "\n"
+
+william.take_fish_from(forth)
+puts "\n"
+puts forth.inspect
+puts william.inspect
+puts "\n"
+
+william.take_fish_from(forth)
+puts "\n"
+puts forth.inspect
+puts william.inspect
+puts "\n"
+
+forth.fishiness
